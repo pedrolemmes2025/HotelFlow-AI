@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: hotelflow-ai
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: APP_URL
+        fromService:
+          name: hotelflow-ai
+          property: url
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /api/health
