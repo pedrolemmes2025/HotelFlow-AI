@@ -1,0 +1,6 @@
+{
+  "name": "HotelFlow AI",
+  "description": "Plataforma SaaS inteligente para gestão de hotéis, reservas, atendimento com IA, automação e CRM multi-tenant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
